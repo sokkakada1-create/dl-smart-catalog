@@ -1,1 +1,137 @@
-<!DOCTYPE html><html lang="km"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070707"><title>DL Advertising & Printing</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="topbar"><a class="brand" href="#home"><img src="logo.png" alt="DL Logo"><div><strong>DL Advertising & Printing</strong><span>Design • Printing • Signage • Installation</span></div></a><nav><a href="#home">ទំព័រដើម</a><a href="#catalog">ផលិតផល</a><a href="#contact">ទំនាក់ទំនង</a></nav></header><main><section id="home" class="hero"><div class="hero-copy"><span class="eyebrow">DL SMART CATALOG V3.1</span><h1>បង្កើតរូបភាពអាជីវកម្មរបស់អ្នកឱ្យកាន់តែទាក់ទាញ</h1><p>យើងផ្តល់សេវារចនា បោះពុម្ព ផលិតស្លាកយីហោ ទូកាហ្វេ រទេះលក់ និងដំឡើងគ្រប់ប្រភេទ។</p><div class="hero-actions"><a class="btn primary" href="#catalog">មើល Catalog</a><a class="btn secondary" href="#contact">ទាក់ទងយើង</a></div></div><div class="hero-logo"><img src="logo.png" alt="DL Logo"></div></section><section id="catalog" class="catalog"><div class="section-title"><span class="eyebrow">DL PRODUCTS</span><h2>ផលិតផល និងសេវាកម្ម</h2></div><div id="productGrid" class="product-grid"></div></section><section id="contact" class="contact"><div><span class="eyebrow">CONTACT DL</span><h2>ផ្ញើរូបគំរូ និងទំហំ ដើម្បីទទួលតម្លៃបានលឿន</h2><p>សូមកែ Telegram, Facebook និងលេខទូរស័ព្ទនៅក្នុង File <strong>products.js</strong>។</p><div class="contact-actions"><a id="telegramLink" class="btn primary" href="#" target="_blank">Telegram</a><a id="facebookLink" class="btn secondary" href="#" target="_blank">Facebook</a><a id="phoneLink" class="btn secondary" href="#">📞 Call</a></div></div><div class="qr-card"><img src="qr-code.png" alt="QR"><strong>ស្កេនមើល Catalog</strong></div></section></main><footer><div class="footer-brand"><img src="logo.png" alt="DL Logo"><div><strong>DL Advertising & Printing</strong><span>Design • Print • Sign • Install</span></div></div><span>© <span id="year"></span> DL Advertising & Printing</span></footer><div id="modal" class="modal hidden"><div class="modal-backdrop" data-close="true"></div><div class="modal-card"><button class="modal-close" data-close="true">×</button><img id="modalImage" src="" alt=""><div class="modal-body"><span id="modalId" class="product-code"></span><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="detail-grid"><div><span>ទំហំ</span><strong id="modalSize"></strong></div><div><span>សម្ភារៈ</span><strong id="modalMaterial"></strong></div><div><span>តម្លៃគំរូ</span><strong id="modalPrice"></strong></div></div><a id="quoteBtn" class="btn primary full" href="#" target="_blank">ស្នើសុំតម្លៃតាម Telegram</a></div></div></div><script src="products.js"></script><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#070707">
+  <meta name="description" content="Official website of DL Advertising & Printing">
+  <title>DL Advertising & Printing — Official Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;600;700&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="DL Advertising & Printing">
+      <img src="logo.png" alt="DL Advertising & Printing Logo">
+      <div>
+        <strong>DL Advertising & Printing</strong>
+        <span>Design • Printing • Signage • Installation</span>
+      </div>
+    </a>
+
+    <button id="menuButton" class="menu-button" type="button" aria-label="Open menu">☰</button>
+
+    <nav id="mainNav">
+      <a href="#home">ទំព័រដើម</a>
+      <a href="#catalog">ផលិតផល</a>
+      <a href="#portfolio">ស្នាដៃ</a>
+      <a href="#contact">ទំនាក់ទំនង</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">DL OFFICIAL WEBSITE V4</span>
+        <h1>បង្កើតអត្តសញ្ញាណអាជីវកម្មរបស់អ្នកឱ្យកាន់តែទាក់ទាញ</h1>
+        <p>យើងផ្តល់សេវារចនា បោះពុម្ព ផលិតស្លាកយីហោ ទូកាហ្វេ រទេះលក់ និងដំឡើងគ្រប់ប្រភេទ។</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#catalog">មើលផលិតផល</a>
+          <a class="btn secondary" href="#contact">ទាក់ទងយើង</a>
+        </div>
+      </div>
+
+      <div class="showcase">
+        <div class="showcase-main">
+          <img id="showcaseImage" src="" alt="">
+          <div class="showcase-overlay">
+            <span id="showcaseCode"></span>
+            <h2 id="showcaseTitle"></h2>
+            <button id="showcaseDetailBtn" class="showcase-detail" type="button">មើលលម្អិត</button>
+          </div>
+          <button id="showcasePrev" class="showcase-arrow prev" type="button" aria-label="Previous">‹</button>
+          <button id="showcaseNext" class="showcase-arrow next" type="button" aria-label="Next">›</button>
+        </div>
+        <div id="showcaseThumbs" class="showcase-thumbs"></div>
+      </div>
+    </section>
+
+    <section id="catalog" class="catalog section-shell">
+      <div class="section-title">
+        <span class="eyebrow">DL PRODUCTS</span>
+        <h2>ផលិតផល និងសេវាកម្ម</h2>
+        <p>ជ្រើសរើសផលិតផលដែលអ្នកចាប់អារម្មណ៍ ហើយចុចមើលព័ត៌មានលម្អិត។</p>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-shell">
+      <div class="section-title">
+        <span class="eyebrow">DL PORTFOLIO</span>
+        <h2>ស្នាដៃរបស់យើង</h2>
+        <p>រូបភាពនៅខាងក្រោមអាចប្តូរជារូបការងារពិតរបស់ DL បានគ្រប់ពេល។</p>
+      </div>
+      <div id="portfolioGrid" class="portfolio-grid"></div>
+    </section>
+
+    <section id="contact" class="contact section-shell">
+      <div>
+        <span class="eyebrow">CONTACT DL</span>
+        <h2>ផ្ញើរូបគំរូ និងទំហំ ដើម្បីទទួលតម្លៃបានលឿន</h2>
+        <p>សូមកែ Telegram, Facebook និងលេខទូរស័ព្ទនៅក្នុង File <strong>products.js</strong>។</p>
+        <div class="contact-actions">
+          <a id="telegramLink" class="btn primary" href="#" target="_blank" rel="noopener">Telegram</a>
+          <a id="facebookLink" class="btn secondary" href="#" target="_blank" rel="noopener">Facebook</a>
+          <a id="phoneLink" class="btn secondary" href="#">📞 Call</a>
+        </div>
+      </div>
+
+      <div class="qr-card">
+        <img src="qr-code.png" alt="DL Smart Catalog QR Code">
+        <strong>ស្កេនមើល Website</strong>
+      </div>
+    </section>
+  </main>
+
+  <div class="quick-contact" aria-label="Quick contact">
+    <a id="quickTelegram" href="#" target="_blank" rel="noopener" aria-label="Telegram">✈</a>
+    <a id="quickFacebook" href="#" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+    <a id="quickPhone" href="#" aria-label="Phone">☎</a>
+  </div>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="logo.png" alt="DL Logo">
+      <div>
+        <strong>DL Advertising & Printing</strong>
+        <span>Design • Print • Sign • Install</span>
+      </div>
+    </div>
+    <span>© <span id="year"></span> DL Advertising & Printing</span>
+  </footer>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close="true">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-body">
+        <span id="modalId" class="product-code"></span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div class="detail-grid">
+          <div><span>ទំហំ</span><strong id="modalSize"></strong></div>
+          <div><span>សម្ភារៈ</span><strong id="modalMaterial"></strong></div>
+          <div><span>តម្លៃគំរូ</span><strong id="modalPrice"></strong></div>
+        </div>
+        <a id="quoteBtn" class="btn primary full" href="#" target="_blank" rel="noopener">ស្នើសុំតម្លៃតាម Telegram</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
