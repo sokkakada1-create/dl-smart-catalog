@@ -1,44 +1,9 @@
-DL SMART CATALOG V3 — របៀប Upload ងាយបំផុត
+DL SMART CATALOG V3.1 — MINIMAL VERSION
 
-Version V3 នេះមិនប្រើ Folder assets ទេ។
-រូបភាពទាំងអស់នៅ Root ដូច្នេះ Upload ងាយជាង Version មុន។
+បានលុប: Statistics, Service Cards, Search, Sort, Categories, Process 01–04, 中文 និងអត្ថបទមិនចាំបាច់។
 
-1. Extract ZIP
-2. ចូល GitHub Repository: dl-smart-catalog
-3. ចុច Add file → Upload files
-4. Select Files ទាំងអស់ក្នុង Folder DL_Smart_Catalog_V3
-5. Upload ជាន់លើ Files ចាស់
-6. ចុច Commit changes
-7. រង់ចាំ 1–3 នាទី
-8. បើក Website ហើយចុច Ctrl + F5
+Upload: Extract ZIP → GitHub Add file → Upload files → Upload ទាំងអស់ជាន់លើ → Commit changes → រង់ចាំ 1–3 នាទី → Ctrl + F5។
 
-FILES សំខាន់:
-index.html
-style.css
-products.js
-app.js
-logo.jpg
-qr-code.png
-coffee-cart.jpg
-signboard.jpg
-retail-cart.jpg
-tshirt.jpg
-sticker.jpg
-lightbox.jpg
-awning.jpg
-wedding.jpg
+កែ Contact ក្នុង products.js: telegramUsername, facebookUrl, phone។
 
-របៀបដូររូបពេលក្រោយ:
-- ត្រៀមរូប JPG ទំហំ 1200 × 900 px
-- Rename ឱ្យដូចឈ្មោះ File ចាស់
-- Upload ជាន់ពីលើ
-- មិនចាំបាច់កែ Code
-
-កែ Contact:
-បើក products.js ហើយកែ៖
-telegramUsername
-facebookUrl
-phone
-
-សំខាន់:
-Telegram Username កុំដាក់សញ្ញា @
+ដូររូបពេលក្រោយ ដោយរក្សាឈ្មោះ File ដដែល។ ទំហំល្អ 1200 × 900 px។
